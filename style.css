@@ -1,0 +1,203 @@
+@media screen and (max-width: 480px) {
+    .myMenu {grid-row: 1 /3;
+    grid-column-start: 3;
+    }
+}
+body {
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    background-color: black;
+}
+header {
+    background-color: aqua;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 100px;
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+}
+.myMenu {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+button {
+    background-color: aqua;
+    border: none;
+    color: black;
+    font-size: 25pt;
+    font-weight: bolder;
+    font-family: 'Arial Narrow Bold', sans-serif;
+
+}
+main {
+    height: 500px;
+    grid-column: 1 / 6;
+    grid-row: 2 / 5;
+
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+video {
+    width: 800px;
+    height: 500px;
+}
+#home {
+    display: block;
+}
+#store {
+    display: none;
+    color: white;
+}
+#store > p {
+    font-size: 26pt;
+}
+#store > img {
+    width: 250px;
+    height: 300px;
+}
+#about {
+    display: none;
+    color: white;
+    text-align: left;
+    font-size: 14pt;
+}
+#about > p {
+    font-size: 12pt;
+    margin: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#about > figure > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 450px;
+}
+#form {
+    display: none;
+    max-width: 800px;
+}
+#log {
+    display: none;
+}
+footer {
+    height: 210px;
+    grid-column: 1 / 6;
+    grid-row: 5 / 6;
+}   
+footer > p {
+    padding: 50px;
+    font-size: 28pt;
+    text-align: center;
+    color: aqua;
+    font-style: bold;
+    font-family: 'Arial Narrow Bold', sans-serif;
+
+}
+.foot {
+    display: flex;
+    justify-content: center;
+}
+.spotify {
+    width: 145px;
+    height: 75px;
+}
+.apple {
+    padding-top: 3px;
+    width: 100px;
+    height: 100px;
+}
+form {
+    display: flex;
+    position: relative;
+    bottom: 125px;
+}
+.contactInfo label, input {
+    display: flex;
+    justify-content: flex-start;
+}
+.contactInfo input {
+    margin-bottom: 15px;
+}
+.questions input {
+    display: flex;
+    position: relative;
+    bottom: 17px;
+    left: 35px;
+    justify-content: flex-start;
+}
+.comment button {
+    display: flex;
+    position: relative;
+    top: 25px;
+    left: 20px;
+}
+#cancel {
+    position: relative;
+    top: 50px;
+}
+form > ul > li > h1, p, label {
+    color: aqua;
+}
+input:valid {
+    border: green;
+    border-width: 5px;
+}
+input:valid+div {
+    display: none;
+}
+input:invalid {
+    border: red;
+    border-width: 5px;
+}
+input:invalid+div {
+    display: block;
+}
+.errorMsg {
+    color: red;
+    position: relative;
+    right: 30px;
+    bottom: 10px;
+}
+#formButton {
+    position: relative;
+    background-color: rgb(241, 175, 89);
+    right: 352px;
+    border-radius: 5px;
+    font-size: larger;
+}
+table {
+    position: relative;
+    top: 8px;
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+}
+.visitorInfo th {  
+    background-color: aqua;
+    padding-top: 5px;
+    font-size: 25px;
+}
+tr {
+    background-color: rgb(241, 175, 89);
+    padding-right: 15px;
+    padding-left: 15px;
+}
+tbody tr:nth-of-type(even) {
+    background-color: rgb(241, 175, 89);
+}
+.tableB {
+    background-color: lightgrey;
+    color: black;
+    font-size: x-large;
+    text-align: center;
+    margin: 3px;
+    border-radius: 5px;
+    font-weight: initial;
+}

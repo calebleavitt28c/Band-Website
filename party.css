@@ -1,0 +1,68 @@
+body {
+    width: auto;
+    animation: change 10s infinite;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    background-color: black;
+}
+header {
+    background-color: aqua;
+    border-bottom-right-radius: 15px;
+    height: 100px;
+    grid-column: 1 / 2S;
+}
+@keyframes change{
+    0%{background-color: orange;}
+    25%{background-color: aquamarine;}
+    50%{background-color: violet;}
+    75%{background-color: yellow;}
+    100%{background-color: aqua;}
+}
+.myMenu {
+    display: flex;
+    justify-content: space-evenly;
+}
+button {
+    animation: change 2s infinite;
+    background-color: aqua;
+    border: none;
+    color: black;
+    font-size: 35pt;
+    font-weight: bolder;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    border: 1px solid white;
+    text-transform: uppercase;
+}
+button:hover {
+    color: black;
+}
+button::before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: aqua;
+    z-index: -1 ;
+    transition: 0.8s;
+}
+
+main {
+    animation: change 5s infinite;
+    height: 500px;
+    grid-column: 1 / 6;
+    grid-row: 2 / 5;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+footer {
+    animation: change 3s infinite;
+    height: 210px;
+    grid-column: 1 / 6;
+    grid-row: 5 / 6;
+}   
+
+
+
+

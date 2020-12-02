@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <title>Hello, world!</title>
+    <!-- Custom styles for this template -->
+
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="starter-template">
+            <h1>Writing a Table</h1>
+            <p class="lead">This describes a few methods of writing a table</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="table-responsive">
+                    <table class="table" id="table1">
+
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-12">
+               
+                    <div class="table-responsive" id="table2">
+
+                    </div>
+                
+            </div>
+            <div class="col-sm-12">
+                <div class="table-responsive" id='table3container'>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+       
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="write_table.js"></script>
+
+        <script>
+            $(document).ready(function() {
+
+
+                //writeTable1();
+               // writeTable2();
+                writeTable3();
+                  $('#table3container').DataTable();
+            });
+        </script>
+</body>
+
+</html>

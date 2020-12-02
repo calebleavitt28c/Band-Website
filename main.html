@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hammocks in May Website</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="myMenu">
+                <div class="menu"><button onclick="homePage()" id="homeButton">Home</button></div>
+                <div class="menu"><button onclick="storePage()" id="storeButton">Store</button></div>
+                <div class="menu"><button onclick="aboutPage()" id="aboutButton">About</button></div>
+                <div class="menu"><button onclick="vLog()" id="logButton">Visitors</button></div>
+                <div class="menu"><button onclick="addCss()" id="afterShowButton">PARTY</button></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <div id="home">
+                <video width="400" height="300" loop>
+                    <source src="VID_147780723_070046_784.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <section>
+            <div id="store">
+                <p>Items available at each show</p>
+                <img src="Annotation 2019-03-12 190023 (1).png">
+                <img src="Hammocks in May shirt concept 1.png">
+                <p>$30 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $30</p>
+            </div>
+        </section>
+
+        <section>
+            <div id="about">
+                <p>Hammocks in May started in the summer of 2018. Caleb Leavitt (vocals), and Joe Hawkins (guitar), got
+                    together to jam out. After slowly adding Allan Hastings (keyboardist), and Jared Bowles (drums),
+                    Kaylie Bowles (vocals) and Chris Escalante (bass) Hammocks in May was complete. Their first single
+                    "Absence" was released the summer of 2019. Since then they've been playing venues in the Salt Lake
+                    Area like Kilby Court, with more shows coming soon!</p>
+                <figure>
+                    <figcaption>Hammocks in May's first show</figcaption>
+                    <img src="Screenshot_20190917-090459 (1).png">
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <div id="form">
+                <h1>Contact Information</h1>
+                <form id="myform" class="needs-validation" novalidate action="">
+                    <ul class="contactInfo">
+                        <li>
+                            <h1>Contact Information</h1>
+                        </li>
+                        <li>
+                            <label for="first-name">First Name</label>
+                            <input class="req" type="text" id="first-name" placeholder="first name">
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li>
+                            <label for="last-name">Last Name</label>
+                            <input class="req" type="text" id="last-name" placeholder="last name">
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li>
+                            <label for="address">Address</label>
+                            <input type="text" id="address" placeholder="street address">
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li>
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="city">
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li>
+                            <label for="state">State</label>
+                            <input type="text" id="state" placeholder="state">
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li>
+                            <label for="zip">Zip Code</label>
+                            <input type="text" id="zip" placeholder="zip code">
+                        </li>
+                        <li>
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" placeholder="phone number">
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" id="email-req" placeholder="email address">
+                            <div class="errorMsg"></div>
+                        </li>
+                    </ul>
+                    <ul class="questions">
+                        <li>
+                            <h1>Questions</h1>
+                        </li>
+                        <li>
+                            <p>How did you find my page?</p>
+                        </li>
+                        <li>
+                            <label for="foundPage1">Internet</label>
+                            <input type="radio" id="found1" name="found" value="Internet">
+
+                            <label for="foundPage2">Friend</label>
+                            <input type="radio" id="found2" name="found" value="Friend">
+
+                            <label for="foundPage3">Google</label>
+                            <input type="radio" id="found3" name="found" value="Google">
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li>
+                            <p>How did you like my page?</p>
+                        </li>
+                        <li>
+                            <label for="ratePage1">Poor</label>
+                            <input type="radio" id="rating1" name="rate" value="Poor">
+
+                            <label for="ratePage2">Fine</label>
+                            <input type="radio" id="rating2" name="rate" value="Fine">
+
+                            <label for="ratePage3">Great</label>
+                            <input type="radio" id="rating3" name="rate" value="Great">
+                            <div class="errorMsg"></div>
+                        </li>
+                    </ul>
+                    <ul class="comment">
+                        <li>
+                            <h1>Message</h1>
+                        </li>
+                        <li>
+                            <textarea rows="4" id="message" placeholder="Write your recommendations here"></textarea>
+                        </li>
+                        <li>
+                            <button type="submit">Save</button>
+                        </li>
+                        <li>
+                            <div><button type="reset" onclick="cancelForm()" id="cancel">Cancel</button></div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div id="log">
+                <div><button onclick="createVisitor()" id="formButton">Log Visit</button></div>
+                <div>
+                    <table class="table" cellspacing="0" width="900px">
+                        <tr class="visitorInfo">
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>Actions</th>
+                        </tr>
+                        <tbody id="visitorTable">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="jquery.mask.min.js"></script>
+        <script src="display.js"></script>
+        <script src="validation.js"></script>
+        <script src="model.js"></script>
+        <script src="controller.js"></script>
+        <script>
+            $(document).ready(function () {
+                initValidation("#myform");
+            });
+        </script>
+
+    </main>
+    <footer>
+        <p>Listen to Hammocks in May below</p>
+        <div class="foot">
+            <div class="footItem"><a href="https://open.spotify.com/artist/0oduT728ffrmowLRfDXi8K"><img class="spotify"
+                        src="image (3).png"></a></div>
+            <div class="footItem"><a href="https://www.apple.com/apple-music/"><img class="apple"
+                        src="image (2).png"></a></div>
+        </div>
+    </footer>
+</body>
+
+</html>
